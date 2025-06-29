@@ -7,6 +7,7 @@
   <meta name="keyword" content="resume,portfolio,data analyst">
   <title>Rahul Kumar :)</title>
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/plugin.css">
@@ -15,6 +16,12 @@
   <link rel="stylesheet" href="assets/css/multicolor.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .adjust-photo {
+      margin-top: 10px; /* Moves image slightly down */
+    }
+  </style>
 </head>
 
 <body>
@@ -55,7 +62,7 @@
             <div class="col-lg-6">
               <div class="home-content">
                 <div class="home-image wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                  <img src="assets/images/raj1.jpg" alt="Rahul Kumar">
+                  <img src="assets/images/raj1.jpg" alt="Rahul Kumar" class="adjust-photo">
                 </div>
                 <h4 class="heading wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Rahul Kumar</h4>
                 <div class="designation wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
@@ -68,7 +75,7 @@
                   </ul>
                 </div>
                 <div class="about-links wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
-                  <a class="base-btn1">A detail‑oriented data analyst with hands‑on experience in business analytics, reporting, and dashboards.</a>
+                  <a class="base-btn1">A detail-oriented data analyst with hands-on experience in business analytics, reporting, and dashboards.</a>
                 </div>
               </div>
             </div>
@@ -151,8 +158,8 @@
                     </ul>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
@@ -174,5 +181,15 @@
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- Typed.js init -->
   <script>
-    // Initialize WOW.js
+    new WOW().init();
+    var typed = new Typed('.typed', {
+      strings: ['Data Analyst.', 'MIS Executive.', 'Dashboard Creator.'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+</body>
